@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lightRed: 'hsl(0, 100%, 67%)',
+            orangeyYellow: 'hsl(39, 100%, 56%)',
+            greenTeal: 'hsl(166, 100%, 37%)',
+            cobaltBlue: 'hsl(234, 85%, 45%)',
+            slateBg: 'hsl(252, 100%, 67%)',
+            royalBlueBg: 'hsl(241, 81%, 54%)',
+            violetBlueCr: 'hsla(256, 72%, 46%, .6)',
+            persianBlueCr: 'hsla(241, 72%, 46%, 0)',
+            paleBlue: 'hsl(221, 100%, 96%)',
+            lightLavender: 'hsl(241, 100%, 89%)',
+            darkGrayBlue: 'hsl(224, 30%, 27%)'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <main class="sm:flex sm:justify-center sm:items-center sm:h-screen sm:shadow-2xl z-10 sm:shadow-black">
+    <div class="flex flex-col px-[2rem] py-12 gap-6 text-center bg-royalBlueBg text-white/90
+     text-center rounded-b-[2rem] sm:rounded-[2rem] sm:max-w-[19rem]">
+      <h1 class="text-xl text-white/60 -mt-6">Your Result</h1>
+      <div class="bg-lightLavender/20 text-white/60 self-center p-3 w-[7.5rem] h-[7.5rem]
+       rounded-full mx-auto shadow-inner">
+        <h2 class="text-[3rem] font-bold text-white">76</h2>
+        of 100
+      </div>
+        <div class="">
+          <h2 class="text-2xl font-semibold">Great</h2>
+          <p class="text-white/60 mt-4">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+    </div>
+
+    <div class="p-[1.25rem] mx-2">
+      <h1 class="text-[1rem] font-semibold text-darkGrayBlue">Summary</h1>
+      <div class="flex justify-between bg-gray-400 p-3 px-4 my-4 items-center rounded-xl bg-lightRed/10">
+        <div class="flex gap-x-3 items-center text-lightRed">
+          <img src="./assets/images/icon-reaction.svg" alt="reaction icon">
+          Reaction
+        </div>
+        <p class="text-gray-400">
+          <span class="text-darkGrayBlue font-bold">80</span> / 100
+        </p>
+      </div>
+      
+      <div class="flex justify-between bg-gray-400 p-3 px-4 my-4 items-center rounded-xl bg-orangeyYellow/10">
+        <div class="flex gap-x-3 items-center text-orangeyYellow">
+          <img src="./assets/images/icon-memory.svg" alt="memory icon">
+          Memory
+        </div>
+        <p class="text-gray-400">
+          <span class="text-darkGrayBlue font-bold">92</span> / 100
+        </p>
+      </div>
+      <div class="flex justify-between bg-gray-400 p-3 px-4 my-4 items-center rounded-xl bg-greenTeal/10">
+        <div class="flex gap-x-3 items-center text-greenTeal">
+          <img src="./assets/images/icon-verbal.svg" alt="verbal icon">
+          Verbal
+        </div>
+        <p class="text-gray-400">
+          <span class="text-darkGrayBlue font-bold">61</span> / 100
+        </p>
+      </div>
+      <div class="flex justify-between bg-gray-400 p-3 px-4 my-4 items-center rounded-xl bg-slateBg/10">
+        <div class="flex gap-x-3 items-center text-cobaltBlue">
+          <img src="./assets/images/icon-visual.svg" alt="visual icon">
+          Visual
+        </div>
+        <p class="text-gray-400">
+          <span class="text-darkGrayBlue font-bold">72</span> / 100
+        </p>
+      </div>
+
+      
+      <button class="bg-darkGrayBlue text-lg text-paleBlue font-semibold rounded-3xl
+       w-full sm:w-[17.5rem] py-[0.6rem] px-12 mt-1 hover:bg-royalBlueBg transition">Continue</button>
+    </div>
+  </main>
+
+  <div class="attribution sm:fixed sm:bottom-0 sm:left-[35%] sm:mt-6">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Ahmad Aroyehun</a>.
+  </div>
+</body>
+
+</html>
